@@ -10,7 +10,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the path of the file containing dictionary words: ");
+        System.out.println("Enter the path of the file containing dictionary words: ");
         String dictFilename = scanner.nextLine();
         int[] words = readWordsFromFile(dictFilename);
         dict = new Dictionary(words);

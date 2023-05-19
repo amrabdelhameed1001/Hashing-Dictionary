@@ -89,7 +89,9 @@ public class Dictionary {
         System.out.println(numNonexisting + " words did not exist in dictionary");
     }
 
-    private String getWordAtIndex(int index) {
-        // retrieve the word at the computed index
+    private int getWordAtIndex(int index) {
+        int bucketIndex = index / hashTable.sizes[index % hashTable.sizes.length];
+        int wordIndex = index % hashTable.sizes[bucketIndex];
+        return hashTable.keys[bucketIndex].get(wordIndex);
     }
 }

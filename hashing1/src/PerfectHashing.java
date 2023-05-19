@@ -2,9 +2,9 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class PerfectHashing {
-    private int[] table;
-    private int[] sizes;
-    private ArrayList<Integer>[] keys;
+    public int[] table;
+    public int[] sizes;
+    public ArrayList<Integer>[] keys;
 
     // O(N^2)-space solution
     public PerfectHashing(int[] S) {
